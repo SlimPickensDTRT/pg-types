@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PG Element Finder</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="elem.js"></script>
+  </head>
+
+  <body>
+    <div class="field">
+      <div class="top-panel">
+        <h1>Defender / Boss</h1>
+      </div>
+      <div class="container">
+        <div class="elem" id="bug">Bug</div>
+        <div class="elem" id="dar">Dark</div>
+        <div class="elem" id="dra">Dragon</div>
+        <div class="elem" id="ele">Electric</div>
+        <div class="elem" id="fai">Fairy</div>
+        <div class="elem" id="fig">Fighting</div>
+        <div class="elem" id="fir">Fire</div>
+        <div class="elem" id="fly">Flying</div>
+        <div class="elem" id="gho">Ghost</div>
+        <div class="elem" id="gra">Grass</div>
+        <div class="elem" id="gro">Ground</div>
+        <div class="elem" id="ice">Ice</div>
+        <div class="elem" id="nor">Normal</div>
+        <div class="elem" id="poi">Poison</div>
+        <div class="elem" id="psy">Psychic</div>
+        <div class="elem" id="roc">Rock</div>
+        <div class="elem" id="ste">Steel</div>
+        <div class="elem" id="wat">Water</div>
+      </div>
+      <div class="container" id="selected">
+        <div class="elem" style="display:none" id="type1"></div>
+        <div class="elem" style="display:none" id="type2"></div>
+        <div class="elem" id="help">Help</div>
+      </div>
+      <h1 style="width:100%">Attackers</h1>
+      <div class="result">
+        <h1>Perfect</h1>
+        <div class="resElem" id="per0">test</div>
+        <div class="resElem" id="per1">test</div>
+        <div class="resElem" id="per2">test</div>
+        <div class="resElem" id="per3">test</div>
+        <div class="resElem" id="per4">test</div>
+        <div class="resElem" id="per5">test</div>
+        <div class="resElem" id="per6"></div>
+        <div class="resElem" id="per7"></div>
+        <div class="resElem" id="per8"></div>
+        <div class="resElem" id="per9"></div>
+        <div class="resElem" id="per10"></div>
+      </div>
+      <div class="result">
+        <h1>Super</h1>
+        <div class="resElem" id="sup0">test</div>
+        <div class="resElem" id="sup1"></div>
+        <div class="resElem" id="sup2"></div>
+        <div class="resElem" id="sup3"></div>
+        <div class="resElem" id="sup4"></div>
+        <div class="resElem" id="sup5"></div>
+        <div class="resElem" id="sup6"></div>
+        <div class="resElem" id="sup7"></div>
+        <div class="resElem" id="sup8"></div>
+        <div class="resElem" id="sup9"></div>
+        <div class="resElem" id="sup10"></div>
+      </div>
+      <div class="result">
+        <h1>Risky</h1>
+        <div class="resElem" id="ris0">test</div>
+        <div class="resElem" id="ris1">test</div>
+        <div class="resElem" id="ris2">test</div>
+        <div class="resElem" id="ris3"></div>
+        <div class="resElem" id="ris4"></div>
+        <div class="resElem" id="ris5"></div>
+        <div class="resElem" id="ris6"></div>
+        <div class="resElem" id="ris7"></div>
+        <div class="resElem" id="ris8"></div>
+        <div class="resElem" id="ris9"></div>
+        <div class="resElem" id="ris10"></div>
+      </div>
+      <div class="result">
+        <h1>Do not use</h1>
+        <div class="resElem" id="dnu0"></div>
+        <div class="resElem" id="dnu1"></div>
+        <div class="resElem" id="dnu2"></div>
+        <div class="resElem" id="dnu3"></div>
+        <div class="resElem" id="dnu4"></div>
+        <div class="resElem" id="dnu5"></div>
+        <div class="resElem" id="dnu6"></div>
+        <div class="resElem" id="dnu7"></div>
+        <div class="resElem" id="dnu8"></div>
+        <div class="resElem" id="dnu9"></div>
+        <div class="resElem" id="dnu10"></div>
+      </div>
+    </div>
+    <div class="help" style="display:none">
+      <div class="elem" id="helpBack">Back</div>
+      <div class="container">
+        <div class="col1">
+          <div class="helpElem">Perfect</div>
+          <div class="helpElem">Super</div>
+          <div class="helpElem">Risky</div>
+          <div class="helpElem">Do not use</div>
+          <div class="helpElem" id="ele" style="border:10px solid green">
+            Electric
+          </div>
+          <div class="helpElem" id="wat" style="border:10px solid red">
+            Water
+          </div>
+        </div>
+        <div class="col2">
+          <div class="helpComment">
+            This type is super effective and resistant against the selected
+            types
+          </div>
+          <div class="helpComment">
+            This type is super effective against the selected types
+          </div>
+          <div class="helpComment">
+            This type is super effective but vulnerable against the selected
+            types (beta)
+          </div>
+          <div class="helpComment">
+            Selected types are resistant against this type
+          </div>
+          <div class="helpComment" style="border:10px solid white">
+            This type is double "Super Effective" against the selected types
+            (best option)
+          </div>
+          <div class="helpComment" style="border:10px solid white">
+            Selected type has double resistance against this type (avoid at any
+            cost)
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

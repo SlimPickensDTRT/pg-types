@@ -1,0 +1,92 @@
+body {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  align-items: center;
+  top: 0px;
+  display: block;
+  min-height: 12vw;
+  max-width: 1200px;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.elem {
+  margin: 0.1rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 7vw;
+  width: 23%;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 4vw;
+  padding-top: 2.5vw;
+}
+
+#help {
+  position: absolute;
+
+  width: 17%;
+  right: 0px;
+}
+
+.result {
+  margin: 0px;
+  margin-top: 1rem;
+  display: inline-table;
+  width: 23%;
+  min-height: 8rem;
+}
+
+.resElem {
+  display: none;
+  border-radius: 10px;
+  height: 3rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.col1 {
+  width: 20%;
+  display: inline-table;
+}
+
+.col2 {
+  width: 70%;
+  display: inline-table;
+  text-align: left;
+}
+
+.helpElem {
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 3rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.helpComment {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 3rem;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+#selected {
+  background-color: lightgray;
+  max-width: 100%;
+}
